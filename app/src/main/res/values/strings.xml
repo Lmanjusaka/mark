@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">eyesmart</string>
+    <string name="recognize">recognize</string>
+    <string name="isadministrator">Admin</string>
+    <string name="text_username_tip">请输入用户名</string>
+    <string name="text_password_tip">请输入密码</string>
+    <string name="button_login">登录</string>
+    <string name="user_search">查找</string>
+    <string name="user_delete">delete</string>
+    <string name="user_increase">增加</string>
+    <string name="add">add_user</string>
+    <string name="bulk_import">import</string>
+    <string name="bulk_export">export</string>
+    <string name="users_manage">Users Manage</string>
+    <string name="sign_in_record">Sign In Record</string>
+    <string name="user_name">姓名</string>
+    <string name="user_id">编号</string>
+    <string name="user_certid">身份证号</string>
+    <string name="user_icon">user_icon</string>
+    <string name="user_detail_name_tip">Name</string>
+    <string name="user_detail_cardid_tip">Card_ID</string>
+    <string name="user_detail_email_tip">E-mail</string>
+    <string name="user_detail_phone_tip">Phone</string>
+    <string name="camera">camera</string>
+    <string name="user_detail_number_tip">number</string>
+    <string name="jni">jni</string>
+    <string name="led_on">Led on</string>
+    <string name="test">test</string>
+    <string name="exit_manage">Exit Manage</string>
+    <string name="manage_lists">Manage Lists</string>
+    <string name="system_setting">SystemSetting</string>
+    <string name="search_hint">Please enter the name or empno</string>
+    <string name="empno">Emp.ID</string>
+    <string name="empno_empty">"Empno can't be empty"</string>
+    <string name="empno_exist">This empno already existing</string>
+    <string name="name">Name</string>
+    <string name="name_empty">"Name can't be empty"</string>
+    <string name="name_exist">This name already existing</string>
+    <string name="sex">Sex</string>
+    <string name="telephone">Telephone</string>
+    <string name="idcard">ID card</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_all_records">Delete all recognized records</string>
+    <string name="delete_all_users">Whether to delete all users?</string>
+    <string name="time">Time</string>
+    <string name="time_to">To</string>
+    <string name="device">Device</string>
+    <string name="device_storage">Device Storage:</string>
+    <string name="deviceid">Device ID</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="ok">Ok</string>
+    <string name="required">(Required)</string>
+    <string name="optional">(Optional)</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="add_face">Add Face</string>
+
+    <string name="whether_delete_all">Whether to delete all?</string>
+
+</resources>

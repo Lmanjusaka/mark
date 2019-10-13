@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_item_height"
+        android:background="@color/manage_bg_appbar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_menu"
+            android:layout_width="88dp"
+            android:layout_height="@dimen/settings_item_height"
+            android:layout_weight="1"
+            android:background="@color/manage_bg_menu"
+            app:srcCompat="@drawable/icon_menu" />
+
+        <LinearLayout
+            android:id="@+id/ll_appbar_employee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_appbar"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_add"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/bar_manage_text_size" />
+
+            <View
+                android:id="@+id/view_interval"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_appbar"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_delete"
+                android:gravity="center"
+                android:text="@string/user_delete"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/bar_manage_text_size" />
+
+            <View
+                android:id="@+id/view_interval1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_import"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_appbar"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_import"
+                android:gravity="center"
+                android:text="@string/bulk_import"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/bar_manage_text_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_export"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_appbar"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_export"
+                android:gravity="center"
+                android:text="@string/bulk_export"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/bar_manage_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_appbar_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_appbar"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_export"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/top_padding"
+                android:paddingRight="@dimen/top_padding"
+                android:text="@string/bulk_export"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/system_bg_color" />
+
+    <FrameLayout
+        android:id="@+id/content_manage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_manage_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_item_height"
+        android:background="@color/manage_bg_appbar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_manage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_nav"
+            android:clickable="true"
+            android:drawableLeft="@drawable/selector_nav_manage"
+            android:gravity="center"
+            android:paddingLeft="@dimen/bottom_padding"
+            android:paddingRight="@dimen/bottom_padding"
+            android:text="@string/users_manage"
+            android:textColor="@drawable/selector_bottom_text"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_nav"
+            android:clickable="true"
+            android:drawableLeft="@drawable/selector_nav_record"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/bottom_padding"
+            android:paddingRight="@dimen/bottom_padding"
+            android:text="@string/sign_in_record"
+            android:textColor="@drawable/selector_bottom_text"
+            android:textSize="@dimen/textSize" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

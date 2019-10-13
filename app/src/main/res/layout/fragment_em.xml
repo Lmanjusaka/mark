@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_bg_dialog_title">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_bg_btn"
+            android:drawableLeft="@drawable/ic_arrow_back_black_36dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/cancel"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_ok"
+            android:background="@drawable/selector_bg_btn"
+            android:drawableLeft="@drawable/editor_icon_delete"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/delete"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_bg_btn"
+            android:drawableRight="@drawable/editor_icon_confirm"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/ok"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSize" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="@string/name"
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" :   "
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="@string/required"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textColor="@color/em_edt_color"
+                    android:textSize="@dimen/textSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="@string/sex"
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" :   "
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rg_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rb_boy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_radio"
+                        android:drawablePadding="10dp"
+                        android:text="@string/male"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rb_girl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_radio"
+                        android:drawablePadding="10dp"
+                        android:text="@string/female"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="@string/telephone"
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" :   "
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <EditText
+                    android:id="@+id/edt_telephone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="@string/optional"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="@color/em_edt_color"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="@string/idcard"
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" :   "
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <EditText
+                    android:id="@+id/edt_idcard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:digits="123456789Xx"
+                    android:hint="@string/optional"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:textColor="@color/em_edt_color"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="@string/empno"
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" :   "
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <EditText
+                    android:id="@+id/edt_empno"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:hint="@string/optional"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textColor="@color/em_edt_color"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_switch_admin"
+                android:layout_width="600dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="@string/isadministrator"
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" :   "
+                    android:textColor="@color/em_text_color"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    app:switchMinWidth="80dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_add_photo"
+                    android:layout_width="233dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/add_icon_photo"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_add_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/add_face"
+                    android:textColor="@color/manage_item_text_color"
+                    android:textSize="@dimen/textSize" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

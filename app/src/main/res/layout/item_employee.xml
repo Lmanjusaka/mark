@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    android:background="@color/manage_bg_appbar"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tv_empno"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:gravity="center_vertical"
+        android:maxEms="5"
+        android:text="00001"
+        android:textColor="@color/manage_item_text_color"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="200dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="5"
+        android:text="姓名"
+        android:textColor="@color/manage_item_text_color"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="360dp"
+        android:gravity="center"
+        android:text="女"
+        android:textColor="@color/manage_item_text_color"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/tv_telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="475dp"
+        android:gravity="center"
+        android:text="18888888888"
+        android:textColor="@color/manage_item_text_color"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/tv_idcard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="745dp"
+        android:gravity="center"
+        android:text="123456789123456789"
+        android:textColor="@color/manage_item_text_color"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/tv_administrator"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="#00ba47"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="管理员"
+        android:textColor="@color/manage_item_text_color"
+        android:textSize="9sp" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/selector_radio"
+        android:button="@null"
+        android:clickable="false"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
